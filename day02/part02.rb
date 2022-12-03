@@ -6,11 +6,7 @@ def bonus(opponent, me)
 end
 
 def score(choice)
-  case choice
-  when ?A, ?X then 1
-  when ?B, ?Y then 2
-  when ?C, ?Z then 3
-  end
+  " XYZ".index(choice)
 end
 
 def choice(opponent, outcome)
